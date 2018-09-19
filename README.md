@@ -1,4 +1,5 @@
 # shiny-app-spotify
+
 Shiny app that connects with spotify's API and provides personalized playlist recommendation through machine learning and data visualization.
 
 The app can be seen at http://joelcponte.shinyapps.io/spotifyapp.
@@ -6,6 +7,15 @@ The app can be seen at http://joelcponte.shinyapps.io/spotifyapp.
 It is a bit messy now as I used it to learn some stuff, but it could be helpful. I will clean it up in the short future.
 
 Some of the code to acess the Spotify data and inspiration is due this post from RCharlie: http://www.rcharlie.com/post/fitter-happier/. Dean Attali's blog was also helpful https://deanattali.com/.
+
+## Run the app locally
+
+```r
+install.packages(c("shiny", "caret", "shinydashboard", "tidyverse", "stringr", "lubridate", "plotly", "reshape2", "httr", "formattable", "highcharter", "RColorBrewer", "htmltools", "shinyjs"))
+library(shiny)
+runGitHub("shiny-app-spotify", "joelcponte") 
+```
+## App Methodology
 
 ### Pick one or multiple artists
 
